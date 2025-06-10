@@ -14,7 +14,7 @@ const Login = () => {
     
     const handleSubmit = async (event) => {
         event.preventDefault()
-        axios.post('http://localhost:3001/user/login', { email, password })
+        axios.post('https://ecommerce-backend-tflj.onrender.com/user/login', { email, password })
             .then(result => {
                 console.log(result)
                 if (result.status === 201) {
