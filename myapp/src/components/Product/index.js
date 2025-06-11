@@ -156,7 +156,7 @@ const Product = () => {
             product: [],
             error  : null
         })
-        await axios.get(`https://ecommerce-backend-tflj.onrender.com/amazon/products?orderBy=${orderBy}&order=${order}&category=${category}&search=${search}&price=${price}`,{
+        await axios.get(`https://ecommerce-backend-dxdy.onrender.com/amazon/products?orderBy=${orderBy}&order=${order}&category=${category}&search=${search}&price=${price}`,{
             headers: {
                 Authorization: `Bearer ${token}`,
             }
