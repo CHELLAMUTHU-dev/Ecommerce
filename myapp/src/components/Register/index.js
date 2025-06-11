@@ -42,7 +42,7 @@ const Signup = () => {
         event.preventDefault()
         if(password !== confirmPassword ) return setError('Passwords do not match')
         if(username === '' || email === '' || password === '') return setError('All fields are required')
-        axios.post('https://ecommerce-backend-tflj.onrender.com/user/register',{username,email,password})
+        axios.post('https://ecommerce-backend-dxdy.onrender.com/user/register',{username,email,password})
         .then(result => {console.log(result)
             if(result.status === 201){
                 alert('User Created')
