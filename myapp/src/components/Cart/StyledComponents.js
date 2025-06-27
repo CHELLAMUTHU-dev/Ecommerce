@@ -5,7 +5,9 @@ export const CartContainer = styled.div`
     padding: 15px;
     min-height: 100vh;
     position:relative;
-`
+    @media(min-width:768px){
+        margin-top:10vh;
+    `
 export const CartHeading = styled.h1`
     font-size: 2rem;
     margin: 0;
