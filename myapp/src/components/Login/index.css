@@ -119,3 +119,9 @@
     color: black;
     font-family: 'Times New Roman', Times, serif;
     font-size: 0.95em;}
+
+.error-msg{
+        color: red;
+        font-size: 18px;
+        font-family: 'Courier New', Courier, monospace;
+    }
