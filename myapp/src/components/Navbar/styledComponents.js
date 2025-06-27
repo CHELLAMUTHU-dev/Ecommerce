@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 export const NavbarContainer = styled.div`
     background-color: ${props => props.color};
-    max-height: 12vh;
+    max-height: 10vh;
     width: 100%;
     display: flex;
     align-items: center;
