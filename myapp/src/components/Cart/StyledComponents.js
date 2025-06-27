@@ -3,10 +3,9 @@ import styled from 'styled-components';
 export const CartContainer = styled.div`
     background-color: ${props => (props.color)};
     padding: 15px;
-    min-height: 100vh;
+    min-height: 90vh;
     position:relative;
-    @media(min-width:768px){
-        margin-top:10vh;
+    margin-top:10vh;
     `
 export const CartHeading = styled.h1`
     font-size: 2rem;
