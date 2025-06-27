@@ -53,7 +53,7 @@ const SpecificProduct = () => {
 
             try {
                 const token = Cookie.get('jwt_token');
-                const response = await axios.get(`http://localhost:3001/amazon/product_details/${id}`,{
+                const response = await axios.get(`https://ecommerce-ip2d.onrender.com/amazon/product_details/${id}`,{
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
