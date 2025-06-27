@@ -9,25 +9,24 @@ const Login = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [showPassword, setShowPassword] = useState(false)
+    const [error,setError] = useState('')
+    const [isError,setIsError] = useState(false)
     const navigate = useNavigate()
     const passwordType = showPassword ? 'text' : 'password'
     
     const handleSubmit = async (event) => {
         event.preventDefault()
-        axios.post('https://ecommerce-ip2d.onrender.com/user/login', { email, password })
+        axios.post('http://localhost:3001/user/login', { email, password })
             .then(result => {
-                console.log(result)
-                if (result.status === 201) {
                     alert('Login Successful')
                     const token = result.data.token
                 Cookies.set('jwt_token',token , {expires:30})
                     navigate('/')
-                } else {
-                    alert('Login Failed')
-                }
             })
-            .catch(err => console.log(err))
-
+            .catch(err => {
+                setIsError(true)
+                setError(err.response.data)
+            })
     }
         useEffect(() => {
         const token = Cookies.get('jwt_token')
@@ -52,6 +51,7 @@ const Login = () => {
                         <input type='checkbox' id='checkbox'  onChange={() =>setShowPassword((prevState => !prevState))}/> 
                         <label htmlFor='checkbox'>show password</label>
                     </div>
+                    {isError && <p className="error-msg">{error}</p>}
                     <button type='submit' className="submit">Login</button>
                     <div className="container">
                         <p className="redirect-para">Don't Have an Account?</p>
