@@ -1,0 +1,232 @@
+.register-route{
+    height: 100vh;
+    width: 100vw;
+    background-color: #f0f0f0;
+}
+
+
+.register{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    background-image: url('https://i.pinimg.com/736x/26/eb/45/26eb4537c1f2a609e9b0b39de646c777.jpg');
+    background-size: cover;
+}
+.register-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-start; 
+    padding: 20px 40px;
+    margin-right: 250px;
+}
+@media (max-width:768px) {
+    .register-left{
+        margin-right:0px;
+        padding: 10px 10px;
+        max-width:40%;
+}
+}
+
+.register-left-content{
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-top: 350px;
+}
+
+@media (max-width:768px) {
+    .register-left-content{
+        margin-top: 300px;
+    }
+    .register-left-content h1{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .register-left-content p{
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    }
+.logo{
+    font-size:50px; 
+    margin: 0px 10px 0px 10px;
+    
+}
+
+@media(max-width:768px){
+    .logo{
+        font-size: 40px;
+    }
+}
+
+.icon-container{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.logo-container h1{
+    font-size: 40px;
+}
+
+@media (max-width:768px) {
+    .logo-container h1{
+        font-size: 30px;
+    }
+}
+
+.icon{
+    margin-right: 13px;
+    font-size: 20px;
+    color:white
+}
+
+
+
+
+.register-container{
+    background-color: rgba(238, 225, 225, 0.4) blur(20px); /* Black w/opacity/see-through */    
+    padding:20px 40px;
+    min-width: 30%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 6px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+@media (max-width:768px) {
+    .register-container{
+        min-width: 200px;
+        padding: 15px 20px;
+        margin-right: 50px;
+        margin-top: 40px;
+    }
+}
+
+.register-heading{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.5em;
+    color: #120909;
+    margin-bottom: 20px; 
+    margin-top: 0;   
+}
+
+@media  (max-width:768px) {
+    .register-heading{
+        font-size: 1.5em;
+    }    
+}
+
+.register-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width:768px) {
+    .input-container{
+        max-width: 350px;
+    }
+}
+
+.input-container label{
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    color: #140606  ;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 5px 0px 5px 0px;
+}
+
+@media (max-width:768px) {
+    .input-container label{
+        font-size: 1em;;
+    }
+}
+
+.input-container input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size:0.79em;
+    margin-bottom: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 90%;
+    margin-top: 5px;
+}
+
+@media (max-width:768px) {
+    .input-container input{
+        font-size: 0.7em;
+    }
+}
+
+.input-container input:focus{
+    border-color: #007BFF;
+    outline: none;
+}
+.submit{
+    border: none;
+    outline: none;
+    background-color: #3786db;
+    color: white;
+    padding: 8px 10px 8px 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.95em;
+    border-radius: 8px;
+    align-self: flex-end;
+    cursor: pointer;
+    margin-left: auto;
+}
+.submit:hover{
+    background-color: #0056b3;
+}
+.redirect-paragraph{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.0rem;
+    font-weight: 400;
+    color: #120909;
+}
+.redirect-container{
+    display: flex;
+    align-items: center;
+}
+
+.error{
+    color: red;
+    font-size: 0.9em;
+    font-family: 'Roboto', Times, serif;
+    margin: 5px 0 0 0;
+}
+
+.redirect-button{
+    color: white;
+    border: none;
+    outline: none;
+    background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+    padding: 8px 10px 8px 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.95em;
+    border-radius: 8px;
+    align-self: flex-end;
+    cursor: pointer;
+    &:hover{
+    text-decoration: underline;
+}
+}
