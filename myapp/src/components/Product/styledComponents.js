@@ -6,8 +6,8 @@ export const ProductContainer = styled.div`
   flex-direction: column;
   flex-wrap: wrap;
   padding: 20px;
-  margin-top:12vh;
-  min-height: 88vh;
+  margin-top:10vh;
+  min-height: 90vh;
   background-color: ${props => props.color || '#f5f5f5'};
 `;
 
