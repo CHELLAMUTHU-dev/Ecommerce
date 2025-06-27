@@ -6,9 +6,11 @@ export const ProductContainer = styled.div`
   flex-direction: column;
   flex-wrap: wrap;
   padding: 20px;
-  margin-top:10vh;
   min-height: 90vh;
   background-color: ${props => props.color || '#f5f5f5'};
+  @media(min-width:768px){
+      margin-top:10vh;
+}
 `;
 
 export const ProductHeading = styled.h1`
