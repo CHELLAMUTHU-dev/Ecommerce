@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const CartContainer = styled.div`
     background-color: ${props => (props.color)};
-    margin-top: 12vh;
+    margin-top: 10vh;
     padding: 15px;
     min-height: 100vh;
     position:relative;
